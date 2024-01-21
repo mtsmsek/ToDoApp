@@ -19,7 +19,7 @@ namespace ToDoApp.Infrastructure.Persistance.Repositories.Commons
             _dbContext = dbContext;
         }
         #region Insert Methods
-        public async Task<int> Add(TEntity entity)
+        public async Task<int> AddAsync(TEntity entity)
         {
             await _entity.AddAsync(entity);
             return await _dbContext.SaveChangesAsync();

@@ -10,7 +10,7 @@ namespace ToDoApp.Common.Constants
     {
         public class PersistanceConstants
         {
-            public const string DefaultConnectionString = "Server = (localdb)\\MSSQLLocalDB;Initial Catalog=todoApp;Integrated Security=False;Trusted_Connection=True;MultipleActiveResultSets=False;TrustServerCertificate=True";
+            public const string DefaultConnectionString = "Server = (localdb)\\MSSQLLocalDB;Initial Catalog=todoapp;Integrated Security=False;Trusted_Connection=True;MultipleActiveResultSets=False;TrustServerCertificate=True";
         }
     }
 }

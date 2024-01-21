@@ -9,6 +9,6 @@ namespace ToDoApp.Api.Application.Services.Repositories.Commons
 {
     public interface IAsyncRepository<TEntity> where TEntity : BaseEntity
     {
-        Task<int> Add(TEntity entity);
+        Task<int> AddAsync(TEntity entity);
     }
 }

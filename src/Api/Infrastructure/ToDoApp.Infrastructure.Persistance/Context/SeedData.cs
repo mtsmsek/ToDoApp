@@ -53,7 +53,7 @@ namespace ToDoApp.Infrastructure.Persistance.Context
         public async Task SeedAsync(IConfiguration configuration)
         {
             var dbContextBuilder = new DbContextOptionsBuilder();
-            dbContextBuilder.UseSqlServer(configuration.GetConnectionString(ToDoAppConstants.PersistanceConstants.DefaultConnectionString));
+            dbContextBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnectionString"));
             var context = new ToDoAppDbContext(dbContextBuilder.Options);
             if(context.Users.Any())
             {
